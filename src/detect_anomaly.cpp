@@ -25,7 +25,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  ********************************************************************/
 /**
- *  @file    detect_anomaly.h
+ *  @file    detect_anomaly.cpp
  *  @author  Smit Dumore
  *  @date    11/30/2022
  *  @version 0.1
@@ -33,17 +33,9 @@
  *
  */
 
-#include <geometry_msgs/Point.h>
+#include <detect_anomaly.h>
 
-class Detect_anomaly {
- public:
-    Detect_anomaly();
-    bool is_anomaly();
-    
- private:
-    geometry_msgs::Point anomaly_x;
-    geometry_msgs::Point anomaly_y;
-    double set_x;
-    double set_x;
 
-};
+bool Detect_anomaly::is_anomaly() {
+   // function to check if anomaly is present or not
+}
