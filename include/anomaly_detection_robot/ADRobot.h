@@ -34,7 +34,7 @@
  */
 
 #include <navigation.h>
-#include <object_detection.h>
+#include <detect_anomaly.h>
 #include <perception.h>
 
 class ADRobot {

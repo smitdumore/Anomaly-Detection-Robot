@@ -33,7 +33,7 @@
  *
  */
 
-#include <ADRobot/ADRobot.hpp>
+#include <ADRobot.hpp>
 
 ADRobot::ADRobot() {
     ROS_INFO_STREAM("Created ADRobot object");
