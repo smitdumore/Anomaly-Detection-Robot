@@ -35,6 +35,9 @@
 
 #include "anomaly_detection_robot/detect_anomaly.h"
 
+Detect_anomaly::Detect_anomaly() {
+   
+}
 
 bool Detect_anomaly::is_anomaly() {
    // function to check if anomaly is present or not

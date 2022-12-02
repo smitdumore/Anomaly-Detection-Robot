@@ -32,7 +32,7 @@
  *  @brief  
  *
  */
-
+#pragma once
 #include <geometry_msgs/Point.h>
 #include <ros/ros.h>
 

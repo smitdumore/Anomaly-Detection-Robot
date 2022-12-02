@@ -32,6 +32,7 @@
  *  @brief  
  *
  */
+#pragma once
 
 class Perception {
  public:

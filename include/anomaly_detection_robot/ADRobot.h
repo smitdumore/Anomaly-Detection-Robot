@@ -32,11 +32,12 @@
  *  @brief  
  *
  */
-
+#pragma once
 #include <ros/ros.h>
 #include "anomaly_detection_robot/navigation.h"
 #include "anomaly_detection_robot/detect_anomaly.h"
 #include "anomaly_detection_robot/perception.h"
+
 
 class ADRobot {
  public:
@@ -44,7 +45,7 @@ class ADRobot {
     void run();
 
  private:
-    Navigation navigator();
-    Perception detectObject();
-    Detect_anomaly detectAnomaly();
+    Navigation navigator;
+    Perception detectObject;
+    Detect_anomaly detectAnomaly;
 };

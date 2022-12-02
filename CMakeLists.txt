@@ -24,6 +24,9 @@ catkin_package()
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
 
 add_library(nav_library src/navigation.cpp)
+add_library(perception_library src/perception.cpp)
+add_library(adr_library src/ADRobot.cpp)
+add_library(anomaly_library src/detect_anomaly.cpp)
 
 include_directories(
   include
@@ -36,6 +39,9 @@ add_executable(ADRobot_node src/node.cpp)
 
 target_link_libraries(ADRobot_node
   nav_library
+  perception_library
+  #adr_library
+  anomaly_library
   ${catkin_LIBRARIES}
 )
 
@@ -56,6 +62,9 @@ if(CATKIN_ENABLE_TESTING)
     the_rostest 
     ${catkin_LIBRARIES}
     nav_library
+    perception_library
+    #adr_library
+    anomaly_library
   )
 endif()
 
