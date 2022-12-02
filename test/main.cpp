@@ -35,10 +35,11 @@
 
 #include <gtest/gtest.h>
 #include <ros/ros.h>
-
+#include "anomaly_detection_robot/navigation.h"
 
 TEST(test_navigation_class, test_one) {
-    EXPECT_EQ(1, 1);
+    Navigation nav;
+    EXPECT_EQ(nav.location_to_home(), false);
 }
 
 

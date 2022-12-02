@@ -36,17 +36,18 @@
 #include "anomaly_detection_robot/navigation.h"
 
 Navigation::Navigation() {
-    ROS_INFO_STREAM("Navigation object created");
+    ROS_INFO("Navigation object created");
 }
 
-bool go_to_location() {
+bool Navigation::go_to_location() {
     //function to move to location
 }
 
-bool home_to_location() {
+bool Navigation::home_to_location() {
     //function to move from home to first locaiton
 }
 
-bool location_to_home() {
+bool Navigation::location_to_home() {
     //function to move from last location to home
+    return false;
 }

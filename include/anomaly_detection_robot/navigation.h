@@ -34,6 +34,7 @@
  */
 
 #include <geometry_msgs/Point.h>
+#include <ros/ros.h>
 
 class Navigation {
  public:
