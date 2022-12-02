@@ -25,7 +25,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  ********************************************************************/
 /**
- *  @file    ADRobot.cpp
+ *  @file    main.cpp
  *  @author  Smit Dumore
  *  @date    11/30/2022
  *  @version 0.1
@@ -33,13 +33,20 @@
  *
  */
 
-#include "anomaly_detection_robot/ADRobot.h"
+#include <gtest/gtest.h>
+#include <ros/ros.h>
 
-ADRobot::ADRobot() {
-    ROS_INFO("Created ADRobot object");
-    // add subscribers and publishers
+
+TEST(test_navigation_class, test_one) {
+    EXPECT_EQ(1, 1);
 }
 
-void ADRobot::run() {
-    // run simulation here
+
+
+int main(int argc, char **argv) {
+    ros::init(argc, argv, "gtest_node");
+    std::shared_ptr<ros::NodeHandle> nh;
+    nh.reset(new ros::NodeHandle);
+    testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
 }

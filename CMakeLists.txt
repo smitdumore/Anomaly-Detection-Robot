@@ -26,6 +26,17 @@ catkin_package(
 ## Build ##
 ###########
 
+if(CATKIN_ENABLE_TESTING)
+  find_package(rostest REQUIRED)
+  add_rostest_gtest(
+    the_rostest 
+    test/all_tests.test 
+    test/main.cpp)
+  target_link_libraries(
+    the_rostest ${catkin_LIBRARIES}
+  )
+endif()
+
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
