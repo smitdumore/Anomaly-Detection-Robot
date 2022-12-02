@@ -44,6 +44,6 @@ class Detect_anomaly {
     geometry_msgs::Point anomaly_x;
     geometry_msgs::Point anomaly_y;
     double set_x;
-    double set_x;
+    double set_y;
 
 };

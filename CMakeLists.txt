@@ -17,10 +17,9 @@ find_package(catkin REQUIRED COMPONENTS
 
 
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES anomaly_detection_robot
-#  CATKIN_DEPENDS roscpp rospy std_msgs
-#  DEPENDS system_lib
+  INCLUDE_DIRS include
+  LIBRARIES anomaly_detection_robot
+  CATKIN_DEPENDS roscpp rospy std_msgs geometry_msgs sensor_msgs
 )
 
 ###########
@@ -35,3 +34,8 @@ include_directories(
 )
 
 add_executable(ADRobot_node src/node.cpp)
+add_dependencies(ADRobot_node ${anomaly_detection_robot_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+target_link_libraries(ADRobot_node
+  ${catkin_LIBRARIES}
+)

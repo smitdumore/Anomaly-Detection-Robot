@@ -33,7 +33,7 @@
  *
  */
 
-#include <navigation.h>
+#include "anomaly_detection_robot/navigation.h"
 
 Navigation::Navigation() {
     ROS_INFO_STREAM("Navigation object created");

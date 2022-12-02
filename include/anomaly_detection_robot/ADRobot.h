@@ -33,9 +33,10 @@
  *
  */
 
-#include <navigation.h>
-#include <detect_anomaly.h>
-#include <perception.h>
+#include <ros/ros.h>
+#include "anomaly_detection_robot/navigation.h"
+#include "anomaly_detection_robot/detect_anomaly.h"
+#include "anomaly_detection_robot/perception.h"
 
 class ADRobot {
  public:
