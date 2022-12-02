@@ -36,12 +36,18 @@
 #include <gtest/gtest.h>
 #include <ros/ros.h>
 #include "anomaly_detection_robot/navigation.h"
+#include "anomaly_detection_robot/perception.h"
 
-TEST(test_navigation_class, test_one) {
+
+TEST(nav_class_test, test_nav) {
     Navigation nav;
     EXPECT_EQ(nav.location_to_home(), false);
 }
 
+TEST(perception_class_test, test_perception) {
+    Perception percep;
+    EXPECT_EQ(percep.is_object_present, false);
+}
 
 
 int main(int argc, char **argv) {

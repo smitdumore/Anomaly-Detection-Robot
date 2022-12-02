@@ -36,7 +36,8 @@
 class Perception {
  public:
     void camera_callback();
-
- private:
     bool is_object_present = false;
+    
+ private:
+    
 };
