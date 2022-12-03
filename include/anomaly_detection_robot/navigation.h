@@ -36,6 +36,10 @@
 #include <geometry_msgs/Point.h>
 #include <ros/ros.h>
 
+/**
+ * @brief Class navigation
+ * 
+ */
 class Navigation {
  public:
     Navigation();

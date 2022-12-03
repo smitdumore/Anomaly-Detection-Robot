@@ -35,18 +35,40 @@
 
 #include "anomaly_detection_robot/navigation.h"
 
+/**
+ * @brief Construct a new Navigation:: Navigation object
+ * 
+ */
 Navigation::Navigation() {
     ROS_INFO("Navigation object created");
 }
 
+/**
+ * @brief Send robot to location
+ * 
+ * @return true 
+ * @return false 
+ */
 bool Navigation::go_to_location() {
     //function to move to location
 }
 
+/**
+ * @brief Send to location
+ * 
+ * @return true 
+ * @return false 
+ */
 bool Navigation::home_to_location() {
     //function to move from home to first locaiton
 }
 
+/**
+ * @brief Send robot to home
+ * 
+ * @return true 
+ * @return false 
+ */
 bool Navigation::location_to_home() {
     //function to move from last location to home
     return false;

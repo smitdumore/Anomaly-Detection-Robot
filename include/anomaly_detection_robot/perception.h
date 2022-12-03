@@ -34,6 +34,10 @@
  */
 #pragma once
 
+/**
+ * @brief Class perception
+ * 
+ */
 class Perception {
  public:
     void camera_callback();

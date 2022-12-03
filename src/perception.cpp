@@ -35,7 +35,10 @@
 
 #include "anomaly_detection_robot/perception.h"
 
-
+/**
+ * @brief Recieve camera images
+ * 
+ */
 void Perception::camera_callback() {
     // recieve images from camera
 }

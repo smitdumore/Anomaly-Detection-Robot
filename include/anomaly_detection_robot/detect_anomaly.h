@@ -35,7 +35,10 @@
 #pragma once
 #include <geometry_msgs/Point.h>
 
-
+/**
+ * @brief Class Detect_anomaly
+ * 
+ */
 class Detect_anomaly {
  public:
     Detect_anomaly();

@@ -35,11 +35,19 @@
 
 #include "anomaly_detection_robot/ADRobot.h"
 
+/**
+ * @brief Construct a new ADRobot::ADRobot object
+ * 
+ */
 ADRobot::ADRobot() {
     ROS_INFO("Created ADRobot object");
     // add subscribers and publishers
 }
 
+/**
+ * @brief run main loop
+ * 
+ */
 void ADRobot::run() {
     // run simulation here
 }

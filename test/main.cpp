@@ -40,28 +40,43 @@
 #include "anomaly_detection_robot/detect_anomaly.h"
 #include "anomaly_detection_robot/ADRobot.h"
 
-
+/**
+ * @brief Construct a new TEST object to test navigation class
+ * 
+ */
 TEST(nav_class_test, test_nav) {
     Navigation nav;
     EXPECT_EQ(nav.location_to_home(), false);
 }
 
+/**
+ * @brief Construct a new TEST object to test perception class
+ * 
+ */
 TEST(perception_class_test, test_perception) {
     Perception percep;
     EXPECT_EQ(percep.is_object_present, false);
 }
 
+/**
+ * @brief Construct a new TEST object to test adrobot class
+ * 
+ */
 TEST(adrobot_class_test, test_adrobot) {
     ADRobot adrobo;
     EXPECT_NO_THROW(adrobo.run());
 }
 
-
+/**
+ * @brief Construct a new TEST object to test anomaly class
+ * 
+ */
 TEST(anomaly_class_test, test_anomaly) {
     Detect_anomaly detect;
     EXPECT_NO_THROW(detect.is_anomaly());
 }
 
+// main function calls all the tests
 int main(int argc, char **argv) {
     ros::init(argc, argv, "gtest_node");
     std::shared_ptr<ros::NodeHandle> nh;
