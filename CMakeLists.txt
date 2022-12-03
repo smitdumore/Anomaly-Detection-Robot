@@ -40,7 +40,7 @@ add_executable(ADRobot_node src/node.cpp)
 target_link_libraries(ADRobot_node
   nav_library
   perception_library
-  #adr_library
+  adr_library
   anomaly_library
   ${catkin_LIBRARIES}
 )
@@ -63,7 +63,7 @@ if(CATKIN_ENABLE_TESTING)
     ${catkin_LIBRARIES}
     nav_library
     perception_library
-    #adr_library
+    adr_library
     anomaly_library
   )
 endif()

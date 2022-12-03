@@ -38,7 +38,7 @@
 #include "anomaly_detection_robot/navigation.h"
 #include "anomaly_detection_robot/perception.h"
 #include "anomaly_detection_robot/detect_anomaly.h"
-//#include "anomaly_detection_robot/ADRobot.h"
+#include "anomaly_detection_robot/ADRobot.h"
 
 
 TEST(nav_class_test, test_nav) {
@@ -50,12 +50,12 @@ TEST(perception_class_test, test_perception) {
     Perception percep;
     EXPECT_EQ(percep.is_object_present, false);
 }
-/*
+
 TEST(adrobot_class_test, test_adrobot) {
     ADRobot adrobo;
-    //EXPECT_NO_THROW(adrobo.run());
+    EXPECT_NO_THROW(adrobo.run());
 }
-*/
+
 
 TEST(anomaly_class_test, test_anomaly) {
     Detect_anomaly detect;
